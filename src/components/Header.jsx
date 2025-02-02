@@ -11,8 +11,8 @@ const Header = () => {
         <div className="flex items-center gap-7">
         <SearchBar />
         <RegionPicker />
-        <img src={Notification} alt="notification" className="" />
-        <div className='flex gap-2 '>
+        <img src={Notification} alt="notification" className='lg:block hidden' />
+        <div className='flex gap-2 lg:-m-0 -m-8'>
             <img src={Image} alt="" />
             <div className='flex flex-col justify-between'>
                 <b>Musfiq</b>

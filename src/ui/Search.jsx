@@ -11,20 +11,20 @@ const SearchBar = () => {
   };
 
   return (
-    <>
+    <div className='lg:block hidden'>
     <TextInput
-      placeholder="Search..."
+      placeholder="   Search..."
       value={searchQuery}
       onChange={handleSearch}
       // icon={<Search size={18} className="text-indigo-600" />}
       radius="md"
       size="md"
       classNames={{
-        input: 'bg-[#F9FAFB] lg:w-full rounded-2xl border border-[#E1E8F1] text-[#6B7280] focus:border-[#2563EB] focus:ring-[#2563EB] focus:ring-opacity-50',
+        input: 'bg-[#F9FAFB] lg:w-full rounded-2xl border pl-4 border-[#E1E8F1] text-[#6B7280] focus:border-[#2563EB] focus:ring-[#2563EB] focus:ring-opacity-50',
       }}
     />
-    <Search size={18} className="text-indigo-600" />
-    </>
+    <Search size={18} className="text-indigo-600 relative -top-7 left-2 cursor-pointer" />
+    </div>
   );
 };
 

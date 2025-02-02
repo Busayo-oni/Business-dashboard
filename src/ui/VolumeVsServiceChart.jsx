@@ -24,14 +24,19 @@ export default function VolumeVsServiceChart() {
           <Bar dataKey="services" stackId="a" fill="#0095FF" barSize={10} />        </BarChart>
       </ResponsiveContainer>
       <div className="flex justify-center items-center mt-4 text-sm text-gray-600">
-        <div className="flex items-start mr-6">
+        <div>
+        <div className="flex items-center mr-6">
           <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 "></span>
-         <p className='inline-block'> Volume <b className="ml-2 font-bold">1,135</b></p>
+         <p className='block border-r pr-5 border-gray-400'> Volume </p>
         </div>
-        <div className="flex items-start">
+        <b className="ml-4 font-bold">1,135</b>
+        </div>
+        <div>
+        <div className="flex items-center">
           <span className="w-2 h-2 bg-green-500 rounded-full mr-2 block "></span>
-          <p className='inline-block'> Services <b className="ml-2 font-bold">635</b></p>
-
+          <p className='block'> Services </p>
+        </div>
+        <b className="ml-4 font-bold">635</b>
         </div>
       </div>
     </Card>

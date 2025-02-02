@@ -3,7 +3,7 @@ import Icon from '../assets/United.png'
 
 const Region = () => {
   return (
-    <div>
+    <div className='lg:block hidden'>
         <select name="Region" id="region">
             <option className='px-3' value="All"><img src={Icon} alt="flag" className="w-4 h-4 mr-2" />Eng (US)</option>
             <option value="Africa"><img src={Icon} alt="flag" className="w-4 h-4 mr-2" />Africa</option>

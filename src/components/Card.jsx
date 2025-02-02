@@ -7,18 +7,18 @@ import BarChart from '../ui/BarChart'
 const Card = () => {
   return (
    
-    <section className='lg:max-w-[1100px]  bg-[#F8F9FA] border-[#C3D3E2] py-3 lg:ml-[320px] flex  text-left'>
-      <div className='bg-white border-[1] shadow-md w-[60%] shadow-[#F8F9FA] rounded-lg p-2 my-5 mx-2'>
+    <section className='lg:max-w-[1100px]  bg-[#F8F9FA] border-[#C3D3E2] py-3 lg:ml-[320px] flex lg:flex-row flex-col text-left'>
+      <div className='bg-white border-[1] shadow-md lg:w-[60%] w-full shadow-[#F8F9FA] rounded-lg p-2 my-5'>
         <div className='flex justify-between items-center w-full px- gap-5'>
             <div className='flex flex-col gap-2 items-center'>
                 <h2 className='font-semibold text-lg text-[#05004E] '>Today's Sales</h2>
                 <p className='font-normal text-[16px] text-[#737791] '>Sales Summery</p>
             </div>
-            <button className='bg-[#F8F9FA] rounded-lg py-0.5 px-3 border border-[#C3D3E2] text-[#0F3659] '><FolderUp className='inline-block mr-2 text-[#0F3659]' size={12} />Export</button>
+            <button className='bg-[#F8F9FA] lg:-ml-0 -ml-10 rounded-lg py-0.5 px-3 border border-[#C3D3E2] text-[#0F3659] '><FolderUp className='inline-block mr-2 text-[#0F3659]' size={12} />Export</button>
         </div>
         <div className='  w-full'>
         <div>
-        <div className='grid grid-cols-1 lg:grid-cols-4 gap-5'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 gap-5'>
 
                 <div className='bg-[#FFE2E5] p-2 rounded-lg  w-[140px] flex flex-col gap-3'>
                 <ChartNoAxesColumnIncreasing className='w-[40px] h-[40px] bg-[#FA5A7D] p-2 rounded-full ' size={25} color="#fff" absoluteStrokeWidth />  
@@ -55,7 +55,7 @@ const Card = () => {
 
         </div>
         </div>
-        <div className='bg-white border-[1] shadow-md w-[40%] shadow-[#F8F9FA] rounded-lg mx-2 p-2 my-5'>
+        <div className='bg-white border-[1] shadow-md lg:w-[40%] shadow-[#F8F9FA] rounded-lg mx-2 p-2 my-5'>
         <h1 className='font-semibold pb-2 text-xl text-[#05004E] '>Visitor Insights</h1>
           <BarChart />
           <div className='flex gap-2 justify-center items-center'>

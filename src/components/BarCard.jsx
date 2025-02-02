@@ -9,7 +9,7 @@ import Avatar2 from '../assets/Avatar2.png'
 
 const BarCard = () => {
   return (
-    <section className='lg:max-w-[1100px]  bg-[#F8F9FA] border-[#C3D3E2] pb-3 lg:ml-[320px] grid grid-cols-[2fr_1fr_1fr] '>
+    <section className='lg:max-w-[1100px]  bg-[#F8F9FA] border-[#C3D3E2] pb-3 lg:ml-[320px] grid lg:grid-cols-[2fr_1fr_1fr] gap-6 '>
       <div className='bg-white border-[1] shadow-md shadow-[#F8F9FA] rounded-lg mx-2 p-2 my-5'>
         <h1 className='font-semibold pb-2 text-xl text-[#05004E] '>Total Revenue</h1>
         <BarOne />

@@ -17,7 +17,7 @@ const Sidebar = () => {
     <>
       {/* Hamburger menu button */}
       <button 
-        className="fixed bg-gray-100 text-[#5D5FEF] lg:hidden top-0 left-0 z-50 p-2 rounded-md "
+        className="fixed bg-gray-100 text-[#5D5FEF] lg:hidden top-0 left-0 z-[100] p-2 rounded-md "
         onClick={toggleSidebar}
       >
         <svg 
@@ -37,7 +37,7 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <div 
-        className={`fixed top-0 left-0 h-full w-72 bg-white text-gray-400 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
+        className={`fixed top-0 left-0 h-full z-50 w-72 bg-white text-gray-400 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } lg:translate-x-0`}
       >
